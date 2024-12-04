@@ -1,0 +1,13 @@
+doctype html
+html
+  head
+    title= title
+    link(rel='stylesheet', href='/styles/style.css')
+    link(rel='stylesheet', href='/styles/navbar.css')
+    block styles
+    script(src="https://unpkg.com/htmx.org")
+  body
+    include partials/_navbar
+    .main-content
+      .overlay
+      block content

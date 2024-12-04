@@ -1,0 +1,25 @@
+.navbar {
+  width: calc(100% - 20px);
+  background-color: #ccc;
+  padding: 10px;
+  display: flex;
+}
+
+.navbar-links {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-link {
+  margin: 0px 10px;
+  /* padding: 10px; */
+  cursor: pointer;
+}
+
+.navbar a {
+  color: green;
+}
+
+.my-profile {
+  margin-left: auto;
+}

@@ -1,0 +1,19 @@
+extends layout-with-navbar
+
+block styles
+  link(rel="stylesheet" href="/styles/director.css")
+
+block content
+  .director-container
+    .director-profile
+        img(src=director.profile_path width="200" height="auto")
+    .director-name #{director.name}
+  .timeline-container
+    .timeline
+        .timeline-event A
+        .timeline-event B
+        .timeline-event C
+  .bio
+    p This is a bio of Alfred Hitchcock
+    p This is more about him
+    p And this is more

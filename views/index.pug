@@ -1,0 +1,24 @@
+extends layout-with-navbar
+
+block styles
+  link(rel="stylesheet" href="/styles/index.css")
+
+block content
+  p Welcome to the Auteur Website!
+  button(
+    hx-get="/posts"
+    hx-swap="innerHTML"
+  ) Click Me!
+  div(id="response")
+  .best-directors
+    h2 Best Directors
+    ul 
+      li Alfred Hitchcock
+      li Stanley Kubrick
+      li George Lucas
+  .best-movies
+    h2 Best Movies
+    ul 
+      li Wizard of Oz 
+      li Citizen Kane
+      li Star Wars

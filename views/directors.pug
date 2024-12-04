@@ -1,0 +1,21 @@
+extends layout-with-navbar
+
+block styles
+  link(rel="stylesheet" href="/styles/directors.css")
+
+block content
+    .directors-container
+        p Some information about the directors
+        each director in directors
+            .director-container
+                .left                
+                    .profile_container
+                        img(src=director.profile_path width="200" height="auto")
+                    .name_and_years_container
+                        .name= director.name
+                        .years= `(${director.birth_year}-${director.death_year})`                    
+                .right
+                    .movies= `Notable Movies: ${director.movies.join(', ')}`
+                    .genres= `Genres: ${director.genres.join(', ')}`
+                    p= director.style_description                   
+                

@@ -1,0 +1,10 @@
+doctype html
+html
+  head
+    title= title
+    link(rel='stylesheet', href='/styles/style.css')
+    block styles
+    script(src="https://unpkg.com/htmx.org")
+  body
+    .main-content
+      block content
